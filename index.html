@@ -3,196 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Catalog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: white;
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border: 1px solid #dddddd;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        img {
-            width: 100px;
-            height: auto;
-        }
-        @media (max-width: 768px) {
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            th {
-                display: none;
-            }
-            tr {
-                margin-bottom: 15px;
-            }
-            td {
-                text-align: right;
-                padding-left: 50%;
-                position: relative;
-            }
-            td:before {
-                content: attr(data-label);
-                position: absolute;
-                left: 0;
-                width: 50%;
-                padding-left: 10px;
-                font-weight: bold;
-                text-align: left;
-            }
-        }
-    </style>
+    <title>Product Table</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Product Catalog</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Description</th>
-                    <th>SKU</th>
-                    <th>Product #</th>
-                    <th>QTY</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Imperial Beach Pebble"></td>
-                    <td data-label="Description">Imperial Beach Pebble</td>
-                    <td data-label="SKU">SKU001</td>
-                    <td data-label="Product #">Prod001</td>
-                    <td data-label="QTY">10</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Mexican Beach Pebble"></td>
-                    <td data-label="Description">Mexican Beach Pebble</td>
-                    <td data-label="SKU">SKU002</td>
-                    <td data-label="Product #">Prod002</td>
-                    <td data-label="QTY">15</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Ash Pebble"></td>
-                    <td data-label="Description">Ash Pebble</td>
-                    <td data-label="SKU">SKU003</td>
-                    <td data-label="Product #">Prod003</td>
-                    <td data-label="QTY">8</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="White Deco Rock"></td>
-                    <td data-label="Description">White Deco Rock</td>
-                    <td data-label="SKU">SKU004</td>
-                    <td data-label="Product #">Prod004</td>
-                    <td data-label="QTY">5</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Alpine White Pebbles"></td>
-                    <td data-label="Description">Alpine White Pebbles</td>
-                    <td data-label="SKU">SKU005</td>
-                    <td data-label="Product #">Prod005</td>
-                    <td data-label="QTY">12</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Rainbow Beach Pebbles"></td>
-                    <td data-label="Description">Rainbow Beach Pebbles</td>
-                    <td data-label="SKU">SKU006</td>
-                    <td data-label="Product #">Prod006</td>
-                    <td data-label="QTY">20</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Play Sand"></td>
-                    <td data-label="Description">Play Sand</td>
-                    <td data-label="SKU">SKU007</td>
-                    <td data-label="Product #">Prod007</td>
-                    <td data-label="QTY">50</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Red Lava"></td>
-                    <td data-label="Description">Red Lava</td>
-                    <td data-label="SKU">SKU008</td>
-                    <td data-label="Product #">Prod008</td>
-                    <td data-label="QTY">25</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="River Rock"></td>
-                    <td data-label="Description">River Rock</td>
-                    <td data-label="SKU">SKU009</td>
-                    <td data-label="Product #">Prod009</td>
-                    <td data-label="QTY">30</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Pond Pebble"></td>
-                    <td data-label="Description">Pond Pebble</td>
-                    <td data-label="SKU">SKU010</td>
-                    <td data-label="Product #">Prod010</td>
-                    <td data-label="QTY">18</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Pea Pebbles"></td>
-                    <td data-label="Description">Pea Pebbles</td>
-                    <td data-label="SKU">SKU011</td>
-                    <td data-label="Product #">Prod011</td>
-                    <td data-label="QTY">22</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="SandStone Step"></td>
-                    <td data-label="Description">SandStone Step</td>
-                    <td data-label="SKU">SKU012</td>
-                    <td data-label="Product #">Prod012</td>
-                    <td data-label="QTY">11</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="SandStone Winter Blend"></td>
-                    <td data-label="Description">SandStone Winter Blend</td>
-                    <td data-label="SKU">SKU013</td>
-                    <td data-label="Product #">Prod013</td>
-                    <td data-label="QTY">14</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="GreyStone Square"></td>
-                    <td data-label="Description">GreyStone Square</td>
-                    <td data-label="SKU">SKU014</td>
-                    <td data-label="Product #">Prod014</td>
-                    <td data-label="QTY">9</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="River Red Brickface Square"></td>
-                    <td data-label="Description">River Red Brickface Square</td>
-                    <td data-label="SKU">SKU015</td>
-                    <td data-label="Product #">Prod015</td>
-                    <td data-label="QTY">13</td>
-                </tr>
-                <tr>
-                    <td data-label="Image"><img src="placeholder.jpg" alt="Pecan Square"></td>
-                    <td data-label="Description">Pecan Square</td>
-                    <td data-label="SKU">SKU016</td>
-                    <td data-label="Product #">Prod016</td>
-                    <td data-label="QTY">7</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table>
+        <tr>
+            <th>SKU</th>
+            <th>Product #</th>
+            <th>QTY</th>
+        </tr>
+        <tr>
+            <td>1006-672-352</td>
+            <td>Imperial Beach Pebble</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>357-470</td>
+            <td>Mexican Beach Pebble</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1006-669-257</td>
+            <td>Ash Pebble</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1005-049-840</td>
+            <td>White Deco Rock</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1006-796-144</td>
+            <td>Alpine White Pebbles</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1004-862-308</td>
+            <td>Rainbow Beach Pebbles</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1005-048-369</td>
+            <td>White Deco Rock</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>715-646</td>
+            <td>Play Sand</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>440-897</td>
+            <td>Red Lava</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>440-809</td>
+            <td>River Rock</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>440-916</td>
+            <td>Pond Pebble</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>440-773</td>
+            <td>Pea Pebbles</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>911-858</td>
+            <td>SandStone Step</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1001-099-690</td>
+            <td>SandStone Winter Blend</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1005-858-038</td>
+            <td>GreyStone Square</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>915-130</td>
+            <td>River Red Brickface Square</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>759-263</td>
+            <td>Pecan Square</td>
+            <td>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
